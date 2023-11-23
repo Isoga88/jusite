@@ -1,6 +1,6 @@
 <template>
     <section class="h-screen z-10 relative">
-        <div class="h-full bg-cover bg-center bg-[url('~/assets/img/first-min.png')] ">
+        <div class="h-full bg-cover bg-center semi bg-[url('~/assets/img/first-min.png')] ">
             <header>
                 <Navbar></Navbar>
             </header>
@@ -14,3 +14,8 @@
         </div>
     </section>
 </template>
+<style>
+.semi{
+    border-radius: 10% 22% 100% 91% / 0% 0% 5% 5%;
+}
+</style>

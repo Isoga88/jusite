@@ -2,7 +2,12 @@
     <nav class="bg-transparent">
         <div class="p-4 flex flex-row justify-center">
             <ul class="flex flex-row justify-center space-x-12 font-medium">
-                <Dropdown></Dropdown>
+                <li>
+                    <Dropdown
+                    element="Informazioni"
+                    :dropdownElements="dropdownElements"
+                    ></Dropdown>
+                </li>
                 <li>
                     <a href="#" class="text-black hover-underline-animation inline-block relative">Servizi</a>
                 </li>
@@ -25,7 +30,7 @@
     </nav>
 </template>
 <script setup>
-const menu = ref(false)
+
 const navElements = ref(['Informazioni', 'Servizi','Prezzi','Contatti'])
 const dropdownElements = ref(['Dove siamo','Chi siamo'])
 
