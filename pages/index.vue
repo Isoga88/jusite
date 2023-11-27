@@ -1,14 +1,19 @@
 <template>
-    <Hero></Hero>
-    <section class="relative z-0 w-full h-screen bg-blue-800 mt-[-20px]">
+    <Hero class="section" ></Hero>
+    <Firstsection class="section"></Firstsection>
+    <section class=" section relative w-full h-screen bg-red-200">
+        ciao2 ciao2
     </section>
-    
     <foot></foot>
 </template>
 <script setup>
+
 </script>
 <style>
-.semi{
-    border-radius: 10% 22% 100% 91% / 0% 0% 5% 5%;
+.section{
+    scroll-snap-align:start ;
+    scroll-snap-stop: always;
+    scroll-margin-top:40px;
 }
+
 </style>

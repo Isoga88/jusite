@@ -1,3 +1,6 @@
 body {
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Righteous', sans-serif;
+}
+html{
+    scroll-snap-type: y mandatory;
 }

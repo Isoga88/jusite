@@ -1,12 +1,12 @@
 <template>
-    <nav class="bg-transparent">
-        <div class="p-4 flex flex-row justify-center">
+    <nav class="bg-transparent ">
+        <div class="p-4 flex flex-row justify-center items-center h-[40px] fixed top-0 right-0 bottom-0 left-0  bg-white transition-opacity" :class="{ 'bg-opacity-90': navBg, 'bg-opacity-0': !navBg }">
             <ul class="flex flex-row justify-center space-x-12 font-medium">
                 <li>
-                    <Dropdown
+                    <Drop
                     element="Informazioni"
                     :dropdownElements="dropdownElements"
-                    ></Dropdown>
+                    ></Drop>
                 </li>
                 <li>
                     <a href="#" class="text-black hover-underline-animation inline-block relative">Servizi</a>
@@ -22,7 +22,7 @@
             <ul class="flex flex-row justify-center space-x-12 font-medium">
                 <li v-for="(element, index) in navElements.slice(2,4)" :key="index">
                     <div>
-                        <a href="#" class="text-black hover-underline-animation inline-block relative">{{ element }}</a>
+                        <a href="#" class="text-black hover-underline-animation inline-block relative" @click="navBg=true, console.log(navBg)">{{ element }}</a>
                     </div>
                 </li>
             </ul>
@@ -33,6 +33,25 @@
 
 const navElements = ref(['Informazioni', 'Servizi','Prezzi','Contatti'])
 const dropdownElements = ref(['Dove siamo','Chi siamo'])
+const navBg = ref(false)
+
+const onScroll = () =>{
+    let windowHeight = window.top.scrollY;
+    if (70 < windowHeight) {
+        navBg.value= true
+        console.log(navBg.value)
+    }else {
+        navBg.value= false
+        console.log(navBg.value)
+    }
+}
+onMounted(() => {
+    window.addEventListener('scroll', onScroll);
+});
+
+onBeforeUnmount(()=>{
+    window.removeEventListener('scroll', onScroll)
+})
 
 </script>
 <style>
@@ -52,17 +71,5 @@ const dropdownElements = ref(['Dove siamo','Chi siamo'])
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-.slide-fade-enter-active {
-  transition: all 0.3s ease-out;
-}
 
-.slide-fade-leave-active {
-  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
-}
-
-.slide-fade-enter-from,
-.slide-fade-leave-to {
-  transform: translateY(10px);
-  opacity: 0;
-}
 </style>

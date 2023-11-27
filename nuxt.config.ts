@@ -17,6 +17,9 @@ export default defineNuxtConfig({
         wght: [1,600],
         ital: [100]
       },
+     'Vina+Sans':true,
+     'Teko':true,
+     'Righteous':true,
     }
   }
 }
