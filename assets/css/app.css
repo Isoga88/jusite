@@ -1,5 +1,6 @@
 body {
     font-family: 'Righteous', sans-serif;
+    overflow-x: hidden;
 }
 html{
     scroll-snap-type: y mandatory;

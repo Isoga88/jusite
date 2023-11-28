@@ -1,6 +1,6 @@
 <template>
     <nav class="bg-transparent ">
-        <div class="p-4 flex flex-row justify-center items-center h-[40px] fixed top-0 right-0 bottom-0 left-0  bg-white transition-opacity" :class="{ 'bg-opacity-90': navBg, 'bg-opacity-0': !navBg }">
+        <div class="p-4 flex flex-row justify-center items-center h-[55px] fixed top-0 right-0 bottom-0 left-0  bg-white z-20 transition duration-700" :class="{ 'bg-opacity-90 backdrop-blur-sm  ': navBg, 'bg-opacity-0': !navBg }">
             <ul class="flex flex-row justify-center space-x-12 font-medium">
                 <li>
                     <Drop
@@ -39,10 +39,8 @@ const onScroll = () =>{
     let windowHeight = window.top.scrollY;
     if (70 < windowHeight) {
         navBg.value= true
-        console.log(navBg.value)
     }else {
         navBg.value= false
-        console.log(navBg.value)
     }
 }
 onMounted(() => {
