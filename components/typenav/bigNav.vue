@@ -1,6 +1,6 @@
 <template>
     <nav class="bg-transparent max-md:hidden w-full">
-        <div class="p-4 flex flex-row justify-center items-center h-[55px] fixed top-0 right-0 bottom-0 left-0  bg-white z-20 transition duration-700 " :class="{ 'bg-opacity-90 backdrop-blur-sm shadow-inner rounded-2xl mx-36 mt-2': navBg, 'bg-opacity-0': !navBg }">
+        <div class="p-4 flex flex-row justify-center items-center h-[55px] fixed top-0 right-0 bottom-0 left-0  bg-white z-20 transition duration-700 " :class="{ 'bg-opacity-90 backdrop-blur-sm shadow-inner rounded-2xl mx-16 mt-2': navBg, 'bg-opacity-0': !navBg }">
             <ul class="flex flex-row justify-center space-x-12 font-medium">
                 <li>
                     <Drop

@@ -2,8 +2,8 @@
     
 <ul class="flex flex-col items-start space-y-4 text-left text-gray-700 max-md:pl-3 max-md:items-center max-md:text-center">
     <li v-for="(element, index) in feature" :key="index" class="flex items-center justify-center space-x-3 pr-4 max-md:flex-col">
-        <IconsCheck class="hover:scale-50 transition-all"></IconsCheck>
-        <span class="text-lg">{{element}}</span>
+        <IconsCheck class="hover:scale-50 transition-all "></IconsCheck>
+        <span>{{element}}</span>
     </li>
 </ul>
 

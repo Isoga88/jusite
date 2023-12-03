@@ -13,7 +13,6 @@
 .section{
     scroll-snap-align:start ;
     scroll-snap-stop: always;
-    scroll-margin-top:55px;
 }
 
 </style>

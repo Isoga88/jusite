@@ -7,7 +7,7 @@
             <div class="flex flex-row justify-center items-center h-5/6 max-md:h-screen max-md:pt-24 max-md:items-start">            
                 <div class="w-1/2 max-md:w-0"></div>
                 <div class="w-1/2 text-center mx-12 max-md:w-full max-md:mx-4">
-                    <h1 class="mb-8 text-5xl font-extrabold leading-none tracking-tight text-gray-900 ">Vediamo cosa è possibile fare</h1>
+                    <h1 class="mb-8 text-5xl font-extrabold leading-none tracking-tight text-gray-900 max-md:mb-6 ">Vediamo cosa è possibile fare</h1>
                     <h2 class="mb-6 text-lg font-normal text-gray-800">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex nulla maiores assumenda explicabo soluta vero error, officiis vitae asperiores in tenetur possimus minus officia sit laboriosam odio eos recusandae porro?</h2>
                 </div>
             </div>
