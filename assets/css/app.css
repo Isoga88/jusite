@@ -2,6 +2,9 @@ body {
     font-family: 'Righteous', sans-serif;
     overflow-x: hidden;
 }
+.titlefont{
+    font-family: 'Allura', sans-serif;
+}
 html{
     scroll-snap-type: y mandatory;
 }

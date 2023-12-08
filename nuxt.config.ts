@@ -4,6 +4,12 @@ export default defineNuxtConfig({
     '@/assets/css/main.css',
     '@/assets/css/app.css',
   ],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
@@ -20,6 +26,7 @@ export default defineNuxtConfig({
      'Vina+Sans':true,
      'Teko':true,
      'Righteous':true,
+     'Allura':true,
     }
   }
 }

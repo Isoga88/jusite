@@ -1,23 +1,23 @@
 <template>
     <nav class="bg-transparent md:hidden ">
-        <div class="p-4 flex flex-row justify-between px-4 py-2 items-center h-[55px] fixed top-0 right-0 bottom-0 left-0 bg-white z-20 transition duration-700" :class="{ 'bg-opacity-90 backdrop-blur-sm shadow-inner rounded-2xl mx-2 mt-2': navBg, 'bg-opacity-0 ': !navBg }" >
-            <p>
+        <div class="flex flex-row px-4 py-2  h-[55px] fixed top-0 right-0 bottom-0 left-0 z-20 transition duration-700" :class="{ 'bg-opacity-0 items-end justify-end': navBg, 'bg-opacity-0 items-center  justify-between ': !navBg }" >
+            <p v-if="!navBg" >
                 Logo ju
             </p>
             <div>
                 <div @click="openSm = !openSm">
-                    <svg class="w-7 h-7 fill-black" :class="openSm ? 'rotation fill-white' : 'norot'" aria-hidden="true"  viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    <svg class="w-7 h-7 fill-white" :class="openSm ? 'rotation' : 'norot'" aria-hidden="true"  viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="fixed top-0 left-0 z-30 h-screen bg-black w-full transition-all" :class="{'translate-x-full': !openSm }">
+    <div class="fixed top-0 left-0 z-30 h-screen bg-black bg-opacity-90 backdrop-blur-3xl w-full transition-all" :class="{'translate-x-full': !openSm }">
         <div @click="openSm = !openSm" class="flex flex-row justify-end pr-4 pt-4">
             <svg class="w-7 h-7 fill-white" :class="openSm ? 'rotation fill-white' : 'norot'" aria-hidden="true"  viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
         </div>
         <ul class="flex flex-col gap-20 items-center justify-center w-full h-full text-5xl pb-20 font-bold text-white">
             <li v-for="(element, index) in navElements" :key="index">
-                <NuxtLink to="/"><div class="block font-medium textNav bg-gradient-to-r from-yellow-500 to-yellow-500 bg-no-repeat py-0.5 px-3.5">{{ element }}</div></NuxtLink>
+                <NuxtLink to="/"><div class="block font-medium textNav bg-gradient-to-r from-amber-500 to-amber-500 bg-no-repeat py-0.5 px-3.5">{{ element }}</div></NuxtLink>
             </li>
         </ul>
     </div>
