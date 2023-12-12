@@ -1,5 +1,5 @@
 <template>
-    <section class="relative w-full h-screen flex flex-row justify-center z-10 max-md:flex-col-reverse portrait:flex-col-reverse  bg-[url('~/assets/img/back1.jpg')] bg-cover">
+    <section class="relative w-full h-screen flex flex-row justify-center z-10 max-md:flex-col-reverse portrait:flex-col-reverse">
         <div class="w-2/5 h-full items-center justify-center flex max-md:w-full max-md:h-2/6 portrait:w-full portrait:h-2/6">
             <figure class="pl-6 w-full h-full trans cursor-pointer filter grid grid-cols-6 grid-rows-6 max-md:flex max-md:justify-center mb-8 max-md:pb-9 max-md:pt-2 max-md:px-0 portrait:flex portrait:justify-center portrait:pb-9 portrait:pt-2 portrait:px-0">
                 <div class="hover:brightness-200 rounded-lg col-start-1 col-end-6 row-start-2 row-end-5 shadow-xl transition-all hover:scale-105 hover:z-10 trans max-md:w-5/6 portrait:w-5/6 bg-[url('~/assets/img/taglio2.jpg')] no-repeat bg-cover" :class="{ 'bg-opacity-100 translate-x-0 ': animateTransition, 'bg-opacity-0 relative position1': !animateTransition }" >

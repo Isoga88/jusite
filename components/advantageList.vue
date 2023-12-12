@@ -9,6 +9,6 @@
 
 </template>
 <script setup>
-const feature = ref(['Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt omnis doloremque dolore nesciunt vel!', 'No setup, or hidden fees','Team size: 1 developer','Premium support'])
+const feature = ref(['Lorem ipsum, dolor sit amet consectetur adipisicing elit', 'No setup, or hidden fees','Team size: 1 developer','Premium support'])
 
 </script>
