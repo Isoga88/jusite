@@ -1,22 +1,15 @@
 <template>
-    <Hero class="section" ></Hero>
-    <div class="h-full w-full bg-[url('~/assets/img/bg_all.svg')] bg-cover">
-        <Firstsection class="section"></Firstsection>
-        <Secondsection class="section"></Secondsection>
-        <Thirdsection class="section"></Thirdsection>
+    <div class="snap-y">
+        <Hero class="snap-start snap-always text-white"></Hero>
+        <div class="h-full w-full bg-[url('~/assets/img/bg_all.svg')] bg-cover">
+            <Firstsection class="snap-start snap-always text-white"></Firstsection>
+            <Secondsection class="snap-start snap-always text-white"></Secondsection>
+            <Thirdsection class="snap-start snap-always text-white"></Thirdsection>
+        </div>
+        <foot class="snap-start text-white"></foot>
     </div>
-    <foot class="section h-screen"></foot>
 </template>
 <script setup>
-import Thirdsection from '~/components/thirdsection.vue';
-
-
 </script>
 <style>
-.section{
-    scroll-snap-align:start ;
-    scroll-snap-stop: always;
-    color: white;
-}
-
 </style>
