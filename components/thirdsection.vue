@@ -36,26 +36,3 @@ onBeforeUnmount(()=>{
     window.removeEventListener('scroll', onScroll)
 })
 </script>
-<style>
-.carrousel{
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-}
-
-.carrousel::-webkit-scrollbar {
-  height: 6px; 
-  margin-top: 3px;
-}
-.carrousel::-webkit-scrollbar-thumb {
-  background-color: #eab308;
-  border-radius: 6px;
-}
-.carrousel::-webkit-scrollbar-thumb:hover {
-  background-color: #b58905; 
-}
-.card{
-    border-radius: 30px;
-    min-height: 400px;
-    min-width: 300px;
-}
-</style>
