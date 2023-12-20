@@ -33,9 +33,15 @@
                     Orario
                 </h1>
                 <div class="flex flex-col items-center gap-4">
-                    <div class="flex items-center gap-1"><span class="font-semibold">Lunedì-Venerdì:</span><span> 9-13/14:30-19</span></div>
-                    <div class="flex items-center gap-1 "><span class="font-semibold">Sabato:</span><span> 9-13/14:30-17</span></div>
-                    <div class="flex items-center gap-1"><span class="font-semibold">Domenica:</span><span> chiuso</span></div>
+                    <div class="flex items-center gap-1">
+                        <span class="font-semibold">Lunedì-Venerdì:</span><span> 9-13/14:30-19</span>
+                    </div>
+                    <div class="flex items-center gap-1 ">
+                        <span class="font-semibold">Sabato:</span><span> 9-13/14:30-17</span>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <span class="font-semibold">Domenica:</span><span> chiuso</span>
+                    </div>
                 </div>
             </div>
         </div>
