@@ -1,8 +1,8 @@
 <template>
-    <div class="snap-y">
+    <div class="snap-y snap-mandatory">
         <Hero class="snap-start snap-always text-white"></Hero>
-        <div class="h-full w-full bg-[url('~/assets/img/bg_all.svg')] bg-cover">
-            <Firstsection class="snap-start snap-always text-white"></Firstsection>
+        <div class="snap-y snap-mandatory h-full w-full bg-[url('~/assets/img/bg_all.svg')] bg-cover">
+            <Firstsection class="snap-start snap-always text-white "></Firstsection>
             <Secondsection class="snap-start snap-always text-white"></Secondsection>
             <Thirdsection class="snap-start snap-always text-white"></Thirdsection>
         </div>
