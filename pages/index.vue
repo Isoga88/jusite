@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div>
         <Hero class="snap-start snap-always text-white"></Hero>
         <div class="bg-[url('~/assets/img/bg_all.svg')] bg-cover">
             <Firstsection class="snap-start snap-always text-white "></Firstsection>

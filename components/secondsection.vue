@@ -10,14 +10,14 @@
             content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam necessitatibus ducimus natus voluptatem sequi iste nemo quos? Est, repellendus ut."
             direction="right"
             :hover="hoverImg1"
-            photo="/assets/img/tipo3.png"
+            photo="tipo3.png"
             ></Personelement>
             <Personelement
             name="Manuel"
             content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ex saepe modi quae impedit quis vitae, sequi maxime ipsa odio at excepturi laboriosam, dolorem dicta!"
             direction="left"
             :hover="hoverImg2"
-            photo="/assets/img/tipo3.png"
+            photo="tipo3.png"
             ></Personelement>
         </div>
     </div>
