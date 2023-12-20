@@ -1,7 +1,7 @@
 <template>
     <div class="snap-y snap-mandatory">
         <Hero class="snap-start snap-always text-white"></Hero>
-        <div class="snap-y snap-mandatory h-full w-full bg-[url('~/assets/img/bg_all.svg')] bg-cover">
+        <div class="bg-[url('~/assets/img/bg_all.svg')] bg-cover">
             <Firstsection class="snap-start snap-always text-white "></Firstsection>
             <Secondsection class="snap-start snap-always text-white"></Secondsection>
             <Thirdsection class="snap-start snap-always text-white"></Thirdsection>
