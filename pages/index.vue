@@ -6,7 +6,7 @@
             <Secondsection class="snap-start snap-always text-white max-md:snap-center"></Secondsection>
             <Thirdsection class="snap-start snap-always text-white max-md:snap-center"></Thirdsection>
         </div>
-        <foot class="snap-start text-white max-md:snap-center"></foot>
+        <foot class="snap-start text-white"></foot>
     </div>
 </template>
 <script setup>
