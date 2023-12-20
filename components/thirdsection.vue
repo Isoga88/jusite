@@ -9,7 +9,7 @@
             <h1 class="flex justify-center text-right text-7xl text-amber-500 font-extrabold tracking-wider max-md:text-center portrait:text-center titlefont max-md:w-full transition-all duration-600" :class="{ 'bg-opacity-100 translate-x-0 ': animateTransition, 'bg-opacity-0 relative -translate-x-96': !animateTransition }">
                 Cosa ci piace
             </h1>
-            <h2 class="text-base font-normal pt-12 text-gray-300 text-right max-md:w-full max-md:px-3 max-md:text-center max-md:pt-3 portrait:px-3 transition-all duration-500" :class="{ 'bg-opacity-100 translate-x-0 ': animateTransition, 'bg-opacity-0 relative -translate-x-96': !animateTransition }">
+            <h2 class="text-base font-semibold pt-12 text-gray-300 text-right max-md:w-full max-md:px-3 max-md:text-center max-md:pt-3 portrait:px-3 transition-all duration-500" :class="{ 'bg-opacity-100 translate-x-0 ': animateTransition, 'bg-opacity-0 relative -translate-x-96': !animateTransition }">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat sunt at temporibus unde vero odit provident architecto omnis consectetur cumque.
             </h2>
         </div>

@@ -13,7 +13,7 @@
                 <h1 class="flex justify-center text-5xl text-amber-500 font-extrabold tracking-wider max-md:text-center portrait:text-center titlefont">
                 Cosa puoi trovare?
                 </h1>
-                <h2 class=" pl-2 text-base font-normal pt-4 text-gray-300 max-md:px-0 max-md:text-center portrait:px-0 portrait:text-center">
+                <h2 class=" pl-2 text-base font-semibold pt-4 text-gray-300 max-md:px-0 max-md:text-center portrait:px-0 portrait:text-center">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio distinctio deserunt quis.
                 </h2>
             </div>
