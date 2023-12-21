@@ -1,6 +1,6 @@
 <template>
     <section class="h-screen">
-        <div class="h-screen bg-cover bg-center bg-[url('~/assets/img/first-min.png')]">
+        <div class="h-screen bg-cover bg-center bg-[url('~/assets/img/first-min.jpg')]">
             <header>
                 <Navbar></Navbar>
             </header>

@@ -16,7 +16,7 @@
     </section>
 </template>
 <script setup>
-let photos = ref([{source:"first-min.png", name:"Taglio 1"}, {source:"taglio1.jpg", name:"Taglio 2"}, {source:"taglio2.jpg", name:"Taglio 3"}, {source:"taglio3.jpg", name:"Taglio 4"},{source:"first-min.png", name:"Taglio 5"},{source:"first-min.png", name:"Taglio 6"}])
+let photos = ref([{source:"first-min.jpg", name:"Taglio 1"}, {source:"taglio1.jpg", name:"Taglio 2"}, {source:"taglio2.jpg", name:"Taglio 3"}, {source:"taglio3.jpg", name:"Taglio 4"},{source:"first-min.jpg", name:"Taglio 5"},{source:"first-min.jpg", name:"Taglio 6"}])
 
 const animateTransition = ref(false)
 
