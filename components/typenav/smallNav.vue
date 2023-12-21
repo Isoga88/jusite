@@ -25,6 +25,38 @@
 <script setup>
 const openSm = ref(false)
 defineProps(['navElements','dropdownElements','navBg'])
+
+let xDown = null;
+let yDown = null;
+
+function handleTouchStart(event) {
+  xDown = event.touches[0].clientX;
+  yDown = event.touches[0].clientY;
+}
+
+function handleTouchMove(event) {
+  if (!xDown || !yDown) {
+    return;
+  }
+
+  let xUp = event.touches[0].clientX;
+  let yUp = event.touches[0].clientY;
+
+  let xDiff = xUp - xDown;
+
+  if (xDiff > 0) {
+    openSm.value = true
+  }
+    xDown = null;
+    yDown = null;
+}
+
+onMounted(() => {
+  window.addEventListener('touchstart', handleTouchStart, false);
+});
+onBeforeUnmount(()=>{
+  window.addEventListener('touchmove', handleTouchMove, false);
+})
 </script>
 <style scoped>
 .textNav {
