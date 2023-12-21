@@ -1,5 +1,5 @@
 <template>
-    <nav class="bg-transparent max-md:hidden ">
+    <nav class="bg-transparent md:hidden ">
         <div class="flex flex-row px-4 py-2  h-[55px] fixed top-0 right-0 bottom-0 left-0 z-20 transition duration-700" :class="{ 'bg-opacity-0 items-end justify-end': navBg, 'bg-opacity-0 items-center  justify-between ': !navBg }" >
             <p v-if="!navBg" >
                 Logo ju
