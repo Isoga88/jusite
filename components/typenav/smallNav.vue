@@ -57,7 +57,7 @@ onMounted(() => {
   window.addEventListener('touchstart', handleTouchStart, false);
 });
 onBeforeUnmount(()=>{
-  window.addEventListener('touchmove', handleTouchMove, false);
+  window.addEventListener('touchstart', handleTouchMove, false);
 })
 </script>
 <style scoped>
