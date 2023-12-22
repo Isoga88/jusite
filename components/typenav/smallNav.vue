@@ -30,11 +30,13 @@ let xDown = null;
 let yDown = null;
 
 function handleTouchStart(event) {
+  console.log("touchstart")
   xDown = event.touches[0].clientX;
   yDown = event.touches[0].clientY;
 }
 
 function handleTouchMove(event) {
+  console.log("touchmove")
   if (!xDown || !yDown) {
     return;
   }
