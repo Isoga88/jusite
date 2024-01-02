@@ -12,8 +12,8 @@
 
 </template>
 <script setup>
-const navElements = ref(['Informazioni', 'Servizi','Prezzi','Contatti'])
-const dropdownElements = ref(['Dove siamo','Chi siamo'])
+const navElements = ref([{name:"Informazioni", page:"/"}, {name:"Servizi", page:"/service"},{name:"Prezzi", page:"/prices"},{name:"Contatti", page:"/contact"}])
+const dropdownElements = ref([{name:"Chi siamo", page:"/who"}, {name:"Dove siamo", page:"/where"}])
 const navBg = ref(false)
 
 const onScroll = () =>{

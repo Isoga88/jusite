@@ -5,7 +5,7 @@
             <div v-if="menu" @mouseover="menu = true" @mouseleave="menu = false" class="absolute z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-36 block opacity-70">
                 <ul class="py-2 text-sm text-gray-700">
                     <li v-for="(element, index) in dropdownElements" :key="index">
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-300">{{element}}</a>
+                      <NuxtLink :to="element.page"><div class="block px-4 py-2 hover:bg-gray-300">{{ element.name }}</div></NuxtLink>
                     </li>
                 </ul>
             </div>

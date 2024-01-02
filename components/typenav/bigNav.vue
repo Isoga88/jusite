@@ -9,20 +9,18 @@
                     ></Drop></ClientOnly>
                 </li>
                 <li>
-                    <a href="#" class="hover-underline-animation inline-block relative">Servizi</a>
+                    <NuxtLink to="/service"><div class="hover-underline-animation inline-block relative">Servizi</div></NuxtLink>
                 </li>
             </ul>
             <ul>
                 <li class="px-24">
-                    <a href="#">
-                        <p>Logo ju</p>
-                    </a>
+                    <NuxtLink to="/"><div>Logo ju</div></NuxtLink>
                 </li>
             </ul>
             <ul class="flex flex-row justify-center space-x-12 font-medium">
                 <li v-for="(element, index) in navElements.slice(2,4)" :key="index">
                     <div>
-                        <a href="#" class="hover-underline-animation inline-block relative" @click="navBg=true">{{ element }}</a>
+                        <NuxtLink :to="element.page"><div @click="navBg=true" class="hover-underline-animation inline-block relative">{{ element.name }}</div></NuxtLink>
                     </div>
                 </li>
             </ul>
