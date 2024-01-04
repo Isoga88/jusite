@@ -59,11 +59,11 @@ onBeforeUnmount(()=>{
   margin-top: 3px;
 }
 .carrousel::-webkit-scrollbar-thumb {
-  background-color: #eab308;
+  background-color: #E1BC54;
   border-radius: 6px;
 }
 .carrousel::-webkit-scrollbar-thumb:hover {
-  background-color: #b58905; 
+  background-color: #E1BC54; 
 }
 .card{
     border-radius: 30px;

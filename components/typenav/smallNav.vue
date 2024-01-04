@@ -19,11 +19,11 @@
         </div>
         <ul class="flex flex-col gap-20 items-center justify-center w-full h-full text-5xl pb-20 font-bold text-white">
             <li v-for="(element, index) in dropdownElements" :key="index">
-                <NuxtLink :to="element.page"><div class="block font-medium textNav bg-gradient-to-r from-amber-500 to-amber-500 bg-no-repeat py-0.5 px-3.5">{{ element.name }}</div></NuxtLink>
+                <NuxtLink :to="element.page"><div class="block font-medium textNav bg-gradient-to-r from-[#E1BC54] to-[#E1BC54] bg-no-repeat py-0.5 px-3.5">{{ element.name }}</div></NuxtLink>
             </li>
 
             <li v-for="(element, index) in navElements.slice(1,4)" :key="index">
-                <NuxtLink :to="element.page"><div class="block font-medium textNav bg-gradient-to-r from-amber-500 to-amber-500 bg-no-repeat py-0.5 px-3.5">{{ element.name }}</div></NuxtLink>
+                <NuxtLink :to="element.page"><div class="block font-medium textNav bg-gradient-to-r from-[#E1BC54] to-[#E1BC54] bg-no-repeat py-0.5 px-3.5">{{ element.name }}</div></NuxtLink>
             </li>
         </ul>
     </div>

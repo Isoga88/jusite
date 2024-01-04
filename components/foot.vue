@@ -10,7 +10,7 @@
         </div>
         <div class="w-8/12 flex flex-row justify-center items-center py-3 max-md:flex-col max-md:w-full max-md:gap-3">
             <div class="w-1/2 flex flex-col justify-center items-center gap-4 max-md:w-full">
-                <h1 class="flex justify-center text-right text-4xl text-amber-500 font-extrabold tracking-wider max-md:text-center portrait:text-center titlefont max-md:w-full transition-all duration-600">
+                <h1 class="flex justify-center text-right text-4xl text-[#E1BC54] font-extrabold tracking-wider max-md:text-center portrait:text-center titlefont max-md:w-full transition-all duration-600">
                     Contatti
                 </h1>
                 <div class="flex flex-col gap-4 items-center">
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="w-1/2 flex flex-col justify-center items-center gap-4 max-md:w-full">
-                <h1 class="flex justify-center text-right text-4xl text-amber-500 font-extrabold tracking-wider max-md:text-center portrait:text-center titlefont max-md:w-full transition-all duration-600">
+                <h1 class="flex justify-center text-right text-4xl text-[#E1BC54] font-extrabold tracking-wider max-md:text-center portrait:text-center titlefont max-md:w-full transition-all duration-600">
                     Orario
                 </h1>
                 <div class="flex flex-col items-center gap-4">

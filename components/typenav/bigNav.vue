@@ -39,7 +39,7 @@ defineProps(['navElements','dropdownElements','navBg'])
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #eab308;
+  background-color: #E1BC54;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

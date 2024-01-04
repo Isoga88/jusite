@@ -4,8 +4,8 @@
             <header>
                 <Navbar></Navbar>
             </header>
-            <div class="flex justify-center items-center h-full max-md:h-screen max-md:items-start" :class="{'flex-row max-md:pt-24': right, 'flex-row-reverse max-md:pt-24': left, 'max-md:p-0':centre}">            
-                <div class="w-1/2 max-md:w-0" :class="{'hidden':centre}"></div>
+            <div class="flex justify-center items-center h-full max-md:h-screen" :class="{'flex-row max-md:pt-24 max-md:items-start': right, 'flex-row-reverse': left, 'max-md:p-0 max-md:items-start':centre}">            
+                <div class="w-1/2 max-md:hidden" :class="{'hidden':centre}"></div>
                 <div class="w-1/2 text-center mx-12 max-md:w-full max-md:mx-4" :class="{'w-full max-md:h-full max-md:flex max-md:items-center max-md:justify-center max-md:flex-col':centre}">
                     <h1 class="mb-8 text-5xl font-extrabold leading-none tracking-tight text-white max-md:mb-6 titlefont ">{{ heading }}</h1>
                     <h2 class="mb-6 text-lg font-semibold text-gray-300">{{ subheading }}</h2>
