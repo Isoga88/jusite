@@ -4,8 +4,8 @@
         :animateTransition = "animateTransition"
         :photos = "photos"
         ></Gridphotos>
-        <div class="w-3/5 h-full flex flex-col pl-12 items-center justify-center pt-8 max-md:w-full max-md:px-4 max-md:h-4/6 portrait:w-full portrait:px-4 portrait:h-4/6">
-            <div class="pb-6 transition-all duration-700" :class="{ 'bg-opacity-100 translate-x-0 ': animateTransition, 'bg-opacity-0 relative -translate-x-96': !animateTransition }">
+        <div class="w-3/5 h-full flex flex-col pl-12 items-center justify-center pt-8 gap-10 max-md:w-full max-md:px-4 max-md:h-4/6 portrait:w-full portrait:px-4 portrait:h-4/6">
+            <div class="pb-10 transition-all duration-700" :class="{ 'bg-opacity-100 translate-x-0 ': animateTransition, 'bg-opacity-0 relative -translate-x-96': !animateTransition }">
                 <h1 class="flex justify-center text-5xl text-[#E1BC54] font-extrabold tracking-wider max-md:text-center portrait:text-center titlefont">
                 Cosa puoi trovare?
                 </h1>
@@ -18,21 +18,16 @@
     </section>
 </template>
 <script setup>
-const animateTransition = ref(false)
-const photos = ref([{source:"taglio2.jpg", name:"Taglio 1"}, {source:"taglio1.jpg", name:"Taglio 2"}])
+const animateTransition = ref(false);
+const photos = ref([{source:"taglio2.jpg", name:"Taglio 1"}, {source:"taglio1.jpg", name:"Taglio 2"}]);
 
 const onScroll = () =>{
     let windowHeight = window.top.scrollY;
-    if (120 < windowHeight) {
-        animateTransition.value= true
-    }else {
-        animateTransition.value= false
-    }
+    animateTransition.value = windowHeight > 120 ?  true:false
 }
 onMounted(() => {
     window.addEventListener('scroll', onScroll);
 });
-
 onBeforeUnmount(()=>{
     window.removeEventListener('scroll', onScroll)
 })

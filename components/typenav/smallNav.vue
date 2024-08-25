@@ -3,7 +3,7 @@
         <div class="flex flex-row px-4 py-2  h-[55px] fixed top-0 right-0 bottom-0 left-0 z-20 transition duration-700" :class="{ 'bg-opacity-0 items-end justify-end': navBg, 'bg-opacity-0 items-center  justify-between ': !navBg }" >
           <ul>
             <li v-if="!navBg" >
-              <NuxtLink to="/"><div>logo ju</div></NuxtLink>
+              <NuxtLink to="/"><img class="w-16" src="~/assets/img/ju_logo.png" alt="Jurgen"></NuxtLink>
             </li>
           </ul>
           <div>

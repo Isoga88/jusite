@@ -1,7 +1,7 @@
 <template>
     <footer class="h-52 bg-[#666666] flex flex-row max-md:flex-col-reverse max-md:items-center max-md:h-max">
         <div class="w-4/12 flex flex-col justify-center items-center gap-12 max-md:w-full">
-            <div class="max-md:hidden">logo ju</div>
+            <img class="w-16" src="~/assets/img/ju_logo.png" alt="Jurgen">
             <div class="flex flex-row gap-2">
                 <IconsWhatsapp class="w-10"></IconsWhatsapp>
                 <IconsInstagram class="w-10"></IconsInstagram>
@@ -45,7 +45,7 @@
                 </div>
             </div>
         </div>
-        <div class="md:hidden">logo ju</div>
+        <img class="w-16" src="~/assets/img/ju_logo.png" alt="Jurgen">
     </footer>
 
 </template>

@@ -1,11 +1,12 @@
 <template>
     <nav class="bg-transparent max-md:hidden w-full">
-        <div class="p-4 flex flex-row justify-center items-center h-[50px] fixed top-0 right-0 bottom-0 left-0  bg-black z-20 transition duration-700 rounded-2xl" :class="{ 'bg-opacity-90 backdrop-blur-sm w-fit mx-auto mt-2 px-16': navBg, 'bg-opacity-0': !navBg }">
+        <div class="p-4 flex flex-row justify-center items-center h-[50px] fixed top-0 right-0 bottom-0 left-0 bg-black z-20 transition duration-700 rounded-2xl" :class="{ 'backdrop-blur-sm w-fit mx-auto mt-2 px-16': navBg, 'bg-opacity-0': !navBg }">
             <ul class="flex flex-row justify-center space-x-12 font-medium">
                 <li>
                     <ClientOnly><Drop
                     element="Informazioni"
                     :dropdownElements="dropdownElements"
+                    :navBg="navBg"
                     ></Drop></ClientOnly>
                 </li>
                 <li>
@@ -14,7 +15,9 @@
             </ul>
             <ul>
                 <li class="px-24">
-                    <NuxtLink to="/"><div>Logo ju</div></NuxtLink>
+                    <NuxtLink to="/">
+                        <img class="w-16" src="~/assets/img/ju_logo.png" alt="Jurgen">
+                    </NuxtLink>
                 </li>
             </ul>
             <ul class="flex flex-row justify-center space-x-12 font-medium">
@@ -30,7 +33,7 @@
 <script setup>
 defineProps(['navElements','dropdownElements','navBg'])
 </script>
-<style scoped>
+<style>
 .hover-underline-animation:after {
   content: '';
   position: absolute;
