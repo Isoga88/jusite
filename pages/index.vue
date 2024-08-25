@@ -22,39 +22,40 @@ const subheading_hero_section = ref("Lorem ipsum dolor, sit amet consectetur adi
 
 </script>-->
 <template>
-    <section class="h-screen text-white relative bg-black cursor-default">
-      <Transition name="slide-fade">
-        <video v-if="videoOpen" class="absolute inset-0 w-full h-full object-cover opacity-75" autoplay loop playsinline>
-          <source :src="bgVideo" type="video/mp4">
-        </video>
-      </Transition>
-      <Transition name="slide-fade">
-        <div v-if="!videoOpen" class="relative z-10 flex flex-col justify-center items-center h-full gap-24 max-md:h-screen max-md:p-0 max-md:items-start" >
-          <div class="text-center pr-4 max-md:w-full max-md:mx-4">
-            <h1 class="text-8xl font-bold leading-none tracking-tight text-[#6f7582] max-md:mb-6">Congratulazioni <br/>Lore!</h1>
-          </div>
-          <div @click="videoOpen = true" class=" flex flex-col items-center animate-bounce cursor-pointer">
-            <span class="text-sm text-[#6f7582]">Clicca per una sorpresa!</span>
-            <span class="">
-                <IconsDoubleArrowRight></IconsDoubleArrowRight>
-            </span>
-          </div>
+  <section class="h-screen text-white relative bg-black cursor-default">
+    <Transition name="slide-fade">
+      <video v-if="videoOpen" class="absolute inset-0 w-full h-full object-cover opacity-75" autoplay loop playsinline>
+        <source :src="bgVideo" type="video/mp4">
+      </video>
+    </Transition>
+    
+
+    <Transition name="fade">
+      <div v-if="videoOpen" @click="videoOpen = false" class="absolute top-4 right-4 z-20 cursor-pointer text-white opacity-50 hover:opacity-100 transition-opacity">
+        <IconsDoubleArrowRight class="w-8 h-8" />
+      </div>
+    </Transition>
+    
+    <Transition name="slide-fade">
+      <div v-if="!videoOpen" class="relative z-10 flex flex-col justify-center items-center h-full gap-24 max-md:h-screen max-md:p-0 max-md:items-start bg-cover bg-center bg-no-repeat" :style="{ backgroundImage: `url(${backgroundImage})` }">
+        <div class="text-center pr-4 max-md:w-full max-md:mx-4">
+          <h1 class="text-8xl titlefont font-bold leading-none tracking-tight text-zinc-200 max-md:mb-6">Congratulazioni <br/>Lore!</h1>
         </div>
-      </Transition>
-<!--       <Transition name="slide-fade">
-        <div @click="videoOpen = true" v-if="!videoOpen" class=" flex flex-col items-center absolute top-1/2 right-2 animate-bounce">
-          <span class="text-sm text-[#6f7582]">Clicca per una sorpresa!</span>
+        <div @click="videoOpen = true" class="flex flex-col items-center animate-bounce cursor-pointer">
+          <span class="text-sm text-zinc-200">Clicca per una sorpresa!</span>
           <span class="">
-              <IconsDoubleArrowRight></IconsDoubleArrowRight>
+            <IconsDoubleArrowRight></IconsDoubleArrowRight>
           </span>
         </div>
-      </Transition> -->
-    </section>
-  </template>
+      </div>
+    </Transition>
+  </section>
+</template>
   
   <script setup>
   import { ref } from 'vue'
-  import bgVideoSource from '~/public/videos/videofinale.mp4'
+  import bgVideoSource from '~/public/videos/videofinaleupdated.mp4'
+  import backgroundImage from '~/assets/img/prima_foto_lore.jpg'
   const videoOpen = ref(false);
   const bgVideo = ref(bgVideoSource);
   </script>
