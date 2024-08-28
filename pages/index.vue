@@ -39,7 +39,7 @@ const subheading_hero_section = ref("Lorem ipsum dolor, sit amet consectetur adi
     <Transition name="slide-fade">
       <div v-if="!videoOpen" class="relative z-10 flex flex-col justify-center items-center h-full gap-24 max-md:h-screen max-md:p-0 max-md:items-start bg-cover bg-center bg-no-repeat" :style="{ backgroundImage: `url(${backgroundImage})` }">
         <div class="text-center pr-4 max-md:w-full max-md:mx-4">
-          <h1 class="text-8xl titlefont font-bold leading-none tracking-tight text-zinc-200 max-md:mb-6">Congratulazioni <br/>Lore!</h1>
+          <h1 class="text-8xl titlefont font-bold leading-none tracking-tight text-zinc-200 max-md:mb-6">Congratulazioni <br/>Lorenzo e Alessandra!</h1>
         </div>
         <div @click="videoOpen = true" class="flex flex-col items-center animate-bounce cursor-pointer">
           <span class="text-sm text-zinc-200">Clicca per una sorpresa!</span>
@@ -54,7 +54,7 @@ const subheading_hero_section = ref("Lorem ipsum dolor, sit amet consectetur adi
   
   <script setup>
   import { ref } from 'vue'
-  import bgVideoSource from '~/public/videos/videofinaleupdated.mp4'
+  import bgVideoSource from '~/public/videos/finalvideo.mp4'
   import backgroundImage from '~/assets/img/prima_foto_lore.jpg'
   const videoOpen = ref(false);
   const bgVideo = ref(bgVideoSource);
